@@ -18,6 +18,12 @@ const PlayerStats = ( { eachPlayerObj } ) => {
           <div className="avgBoost">Average Boost Amount: {eachPlayerObj.stats.boost.avg_amount}</div>
 
           <div className="smallPads">Small Pads Collected: {eachPlayerObj.stats.boost.amount_collected_small}</div>
+
+          <div className="smallPads">Small Pads Collected: {eachPlayerObj.stats.boost.amount_collected_small}</div>
+
+          <div className="smallPads">Small Pads Collected: {eachPlayerObj.stats.boost.amount_collected_small}</div>
+
+          <div className="smallPads">Small Pads Collected: {eachPlayerObj.stats.boost.amount_collected_small}</div>
         </>
       }
     </>
