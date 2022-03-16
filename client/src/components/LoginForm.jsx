@@ -37,12 +37,12 @@ const LoginForm = () => {
 
     </form>
 
-    <div onClick={(e) => console.log('clicked on register new acct')}>
-        <i>click here to register a new account</i>
+    <div onClick={(e) => console.log('clicked on forgot password')}>
+      <i>Forgot password?</i>
     </div>
 
-    <div onClick={(e) => console.log('clicked on forgot password')}>
-      <i>forgot password?</i>
+    <div onClick={(e) => console.log('clicked on register new acct')}>
+        <i>Create a new account</i>
     </div>
 
   </div>

@@ -3,6 +3,7 @@ import React, { useState, useEffect, createContext, useContext } from "react";
 import { AppContext } from './App.jsx';
 import PlayerStats from './PlayerStats.jsx';
 import PlayerDropDown from './PlayersDD.jsx';
+import Search from './Search.jsx';
 export const OverviewContext = createContext();
 
 const Overview = () => {
@@ -17,6 +18,8 @@ const Overview = () => {
 
   return (
     <OverviewContext.Provider value={{ allPlayers, updateSelectedPlayer, selectedPlayer }}>
+
+      <Search/>
 
       <h4>Selected Replay: {replayData.groups[0].name}</h4>
 
