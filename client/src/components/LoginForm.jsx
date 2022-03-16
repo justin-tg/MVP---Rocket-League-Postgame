@@ -1,6 +1,8 @@
 //Imported Tools / Programs
 import React, { useState, useEffect, createContext, useContext } from "react";
 // import { AppContext } from './App.jsx';
+import '../style.css';
+
 
 const LoginForm = () => {
   // const { replayData } = useContext(AppContext);
@@ -8,7 +10,7 @@ const LoginForm = () => {
   const [email, setEmail] = useState('');
 
   return (
-    <div>
+    <div className="login">
     <form className="loginForm" onSubmit={(e) => {
       e.preventDefault();
       alert('Login Successful Please Wait... loading...loading...loading...');

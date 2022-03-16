@@ -28,10 +28,10 @@ app.post(endpoint, (req, res) => {
   })
   .then((response) => {
     console.log('successfully retrieved replay data: ', response.data)
-    //save the replay data to a db
+    //save the replay data to a db if time
+    res.status(201).send(response.data);
   })
   .catch((err) => {
-    // console.log('ballchasing get err: ', err);
     res.status(500).send(err);
   });
   //res.status(201).send();

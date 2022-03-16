@@ -18,19 +18,23 @@ const Overview = () => {
 
   return (
     <OverviewContext.Provider value={{ allPlayers, updateSelectedPlayer, selectedPlayer }}>
+      <div className="overview">
 
-      <Search/>
+        <Search/>
 
-      <h4>Selected Replay: {replayData.groups[0].name}</h4>
+        {/* <h4>Selected Replay: {replayData.groups[0].name}</h4> */}
 
-      <div>Selected Player: {selectedPlayer}</div>
+        <div className="overviewHeader">
+          <div className="selectedReplay"><b>Selected Replay: </b>{'XXX-023-456'}</div>
+          <b>Selected Player:</b><PlayerDropDown/>
+        </div>
 
-      <PlayerDropDown/>
+        <div className="playerStats">
+          {allPlayers.map((eachPlayer, i)=> {
+            return <PlayerStats key={i} eachPlayerObj={eachPlayer}/>
+          })}
+        </div>
 
-      <div>
-        {allPlayers.map((eachPlayer, i)=> {
-          return <PlayerStats key={i} eachPlayerObj={eachPlayer}/>
-        })}
       </div>
 
     </OverviewContext.Provider>

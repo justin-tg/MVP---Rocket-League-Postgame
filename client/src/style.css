@@ -1,0 +1,106 @@
+/*
+CSS: bootstrap, chakra, tailwind
+
+best chart npm packages
+chart.js
+*/
+
+.header {
+  text-align: center;
+}
+
+.mamma {
+  background-color: rgba(0, 0, 0, 0.075);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.navMenu {
+  background-color: rgb(97, 164, 226);
+  border-radius: 20px;
+  border: 1px black solid;
+  width: 20%;
+  max-width: 20%;
+  display: inline-block;
+  text-align: center;
+}
+
+.overview {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.search {
+  padding: 20px 20px 20px 20px;
+  /* margin: 0 auto; */
+}
+
+.searchForm {
+  background-color: #ffcba4;
+  border: 1px black solid;
+  display: inline-block;
+  font-size: 13px;
+  width: 70%;
+  padding: 5.5px 10px
+
+}
+
+.searchButton {
+  border: 1px black solid;
+  font-size: 16px;
+  padding: 5px 10px
+}
+
+.overviewHeader {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.selectedReplay {
+  padding-right: 20px;
+}
+
+.playerStats {
+  border-radius: 20px;
+  border: 1px black solid;
+  padding: 20px 20px;
+}
+
+.shootingPercent {
+  border: 1px red solid;
+}
+
+.avgBoost {
+  border: 1px orange solid;
+}
+
+.smallPads {
+  border: 1px yellow solid;
+}
+
+.timeZeroBoost{
+  border: 1px green solid;
+}
+
+.timeFullBoost {
+  border: 1px blue solid;
+}
+
+.avgSpeed {
+  border: 1px violet solid;
+}
+
+.login {
+  padding: 10px 20px;
+  border: 1px black solid;
+  border-radius: 20px;
+  background-color: aqua;
+  max-width: 20%;
+  display: inline-block;
+  justify-content: center;
+}

@@ -11,7 +11,7 @@ const Search = ( { eachPlayerObj } ) => {
 
   return (
     <>
-    <form className="searchForm" onSubmit={(e) => {
+    <form className="search" onSubmit={(e) => {
       e.preventDefault();
       console.log('Requesting Replay Data Please Wait... loading...loading...loading...');
       //postreq for new replay id
@@ -19,6 +19,7 @@ const Search = ( { eachPlayerObj } ) => {
     }}>
 
       <input
+        className="searchForm"
         type="text"
         value={searchTerm}
         onChange={e => {setSearchTerm(e.target.value)}}
@@ -26,6 +27,7 @@ const Search = ( { eachPlayerObj } ) => {
       />
 
       <input
+        className="searchButton"
         type="submit"
         value="Search"
       />

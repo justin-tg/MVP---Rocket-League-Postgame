@@ -6,7 +6,9 @@ export const AppContext = createContext();
 import Hardcoded from './Hardcoded.jsx';
 import Header from './Header.jsx';
 import LoginForm from './LoginForm.jsx';
+import NavigationMenu from './NavigationMenu.jsx';
 import Overview from './Overview.jsx';
+// import '../style.css';
 //Declared Variabls
 const API = '/replays';
 
@@ -18,8 +20,11 @@ const App = () => {
     console.log(typeof id, id);
     axios
     .post(API, {id} )
-    .then(res => console.log('post request success'))
-    .catch(err => console.log('invalid replay id please try again'))
+    .then(res => {
+      const data = res.data;
+      setReplayData(data);
+    })
+    .catch(err => alert('invalid replay id please try again'))
   }
 
   return (
@@ -28,9 +33,11 @@ const App = () => {
 
         <Header/>
 
-        <LoginForm/>
-
-        <Overview/>
+        <div className="mamma">
+          <NavigationMenu/>
+          <Overview/>
+          <LoginForm/>
+        </div>
 
       </div>
     </AppContext.Provider>
