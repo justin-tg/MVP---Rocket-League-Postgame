@@ -25,6 +25,7 @@ const App = () => {
       setReplayData(data);
     })
     .catch(err => alert('invalid replay id please try again'))
+    return;
   }
 
   return (

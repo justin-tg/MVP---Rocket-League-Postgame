@@ -10,23 +10,35 @@ const NavigationMenu = () => {
   return (
     <div className="navMenu">
 
-      <h4>Navigation Menu</h4>
-
-      <div>RPL Account Settings</div>
+      <h4 className="navMenuHeader">{'<current_user>'}</h4>
 
       <div>Dashboards (1)</div>
 
-      <div>Custom Analytics</div>
+      <div>Customize Analysis</div>
 
       <div>My Replays</div>
 
       <div>Favorited Replays</div>
 
+      <div>Replay Groups</div>
+
       <div>Friends</div>
 
       <div>My Clips</div>
 
-      <div>...</div>
+      <div>First Touch Podcast</div>
+
+      <div>RPL Account</div>
+
+      <div>
+        <select>
+          <option value="--">--</option>
+          <option value="-x-">-x-</option>
+          <option value="-y-">-y-</option>
+          <option value="-z-">-z-</option>
+        </select>
+        {'    See More'}
+      </div>
 
     </div>
   )
