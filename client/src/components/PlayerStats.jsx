@@ -2,6 +2,7 @@
 import React, { useState, useEffect, createContext, useContext } from "react";
 import { AppContext } from './App.jsx';
 import { OverviewContext } from './Overview.jsx';
+import { Bar } from 'react-chartjs-2';
 
 const PlayerStats = ( { eachPlayerObj } ) => {
   const { replayData } = useContext(AppContext);
