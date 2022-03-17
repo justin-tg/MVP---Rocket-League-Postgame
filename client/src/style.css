@@ -40,6 +40,10 @@ chart.js
   background-color: rgb(120, 166, 209);
 }
 
+.navMenu > div:hover {
+  background-color: rgb(8, 154, 252);
+}
+
 .navMenuHeader {
   font-size: 20px;
 }
@@ -56,7 +60,6 @@ chart.js
 }
 
 .searchForm {
-  /* background-color: #ffcba4; */
   border: 1px black solid;
   display: inline-block;
   font-size: 15px;
@@ -87,7 +90,6 @@ chart.js
   border-radius: 20px;
   border: 1px black solid;
   padding: 0 20px;
-  /* background-color: #ffcba4; */
 }
 
 .playerStats > * {
@@ -95,6 +97,13 @@ chart.js
   border: 1px solid black;
   border-radius: 20px;
   padding: 10px 10px 10px 10px;
+  background-color: white;
+}
+
+.shootingPercentage {
+  text-shadow:rgb(8, 154, 252);
+  color: rgb(31, 212, 31);
+  font-size: 18px;
 }
 
 .seeMore {
@@ -150,12 +159,24 @@ chart.js
   text-align: center;
 }
 
+.forgotPW:hover {
+  color: rgb(214, 228, 238);
+}
+
 .newAccount {
   padding: 10px 10px;
   display: block;
   text-align: center;
 }
 
+.newAccount:hover {
+  color: rgb(214, 228, 238);
+}
+
+.footer {
+  display: block;
+  text-align: center;
+}
 
 /*--Element Styles--*/
 b {
@@ -164,4 +185,8 @@ b {
 
 i {
   color: rgb(29, 141, 216);
+}
+
+i:hover {
+  color:rgba(96, 152, 216, 0.582);
 }

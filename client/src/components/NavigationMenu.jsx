@@ -10,11 +10,11 @@ const NavigationMenu = () => {
   return (
     <div className="navMenu">
 
-      <h4 className="navMenuHeader">{'<current_user>'}</h4>
+      <h4 className="navMenuHeader">{'justaboink'}</h4>
 
-      <div>Dashboards (1)</div>
+      <div onClick={e => alert('This Feature is currently under development, please try again later')}>Dashboards (1)</div>
 
-      <div>Customize Analysis</div>
+      <div>Customize Stats</div>
 
       <div>My Replays</div>
 

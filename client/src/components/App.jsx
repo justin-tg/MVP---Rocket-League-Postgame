@@ -3,12 +3,14 @@ import React, { useState, useEffect, createContext, useContext } from "react";
 import axios from 'axios';
 export const AppContext = createContext();
 //Imported Files
+import Chart from './Chart.jsx';
+import Footer from './Footer.jsx';
 import Hardcoded from './Hardcoded.jsx';
 import Header from './Header.jsx';
 import LoginForm from './LoginForm.jsx';
 import NavigationMenu from './NavigationMenu.jsx';
 import Overview from './Overview.jsx';
-// import '../style.css';
+import '../style.css';
 //Declared Variabls
 const API = '/replays';
 
@@ -39,6 +41,8 @@ const App = () => {
           <Overview/>
           <LoginForm/>
         </div>
+
+        <Footer/>
 
       </div>
     </AppContext.Provider>

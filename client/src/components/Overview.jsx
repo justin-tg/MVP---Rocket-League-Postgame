@@ -22,10 +22,8 @@ const Overview = () => {
 
         <Search/>
 
-        {/* <h4>Selected Replay: {replayData.groups[0].name}</h4> */}
-
         <div className="overviewHeader">
-          <div className="selectedReplay"><b>Selected Replay: </b>{'XXX-023-456'}</div>
+          <div className="selectedReplay"><b>Selected Replay: </b>{replayData.id.substring(0, 15)}...</div>
           <b>Selected Player:</b><PlayerDropDown/>
         </div>
 

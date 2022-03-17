@@ -14,8 +14,9 @@ const PlayerStats = ( { eachPlayerObj } ) => {
     <>
       {selectedPlayer === eachPlayerObj.name &&
         <>
-          <div className="shootingPercent">
-            <b>Shooting Percentage: </b>{eachPlayerObj.stats.core.shooting_percentage}%
+          <div onClick={e => alert('Feature Unavailable: currently under development')}>
+            <b>Shooting Percentage: </b>
+            <div className="shootingPercentage">{eachPlayerObj.stats.core.shooting_percentage}%</div>
             <p>Graph: Red Zone: --25% | Average Zone: 25%-50% | Green Zone: 50%++</p>
             <div className="seeMore"><i>see more...</i></div>
           </div>
