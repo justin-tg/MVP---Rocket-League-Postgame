@@ -16,6 +16,10 @@ const Overview = () => {
     setSelectedPlayer(e.target.value);
   };
 
+  useEffect(() => {
+    setSelectedPlayer(replayData.blue.players[0].name)
+  }, [replayData]);
+
   return (
     <OverviewContext.Provider value={{ allPlayers, updateSelectedPlayer, selectedPlayer }}>
       <div className="overview">
