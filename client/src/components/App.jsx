@@ -4,6 +4,7 @@ import axios from 'axios';
 export const AppContext = createContext();
 //Imported Files
 import Chart from './Chart.jsx';
+import CustomStats from './CustomStats.jsx';
 import Footer from './Footer.jsx';
 import Hardcoded from './Hardcoded.jsx';
 import Header from './Header.jsx';
@@ -35,6 +36,8 @@ const App = () => {
       <div>
 
         <Header/>
+
+        <CustomStats />
 
         <div className="mamma">
           <NavigationMenu/>

@@ -178,6 +178,12 @@ chart.js
   text-align: center;
 }
 
+/*--Custom Stats Modal--*/
+.customStats {
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
 /*--Element Styles--*/
 b {
   font-size: 17px;
