@@ -3,7 +3,7 @@ import React, { useState, useEffect, createContext, useContext } from "react";
 import { AppContext } from './App.jsx';
 import { OverviewContext } from './Overview.jsx';
 import '../style.css';
-import MyModal from './Modal.jsx';
+import ModalStats from './ModalStats.jsx';
 
 const NavigationMenu = () => {
   // const { updateReplayData, replayData } = useContext(AppContext);
@@ -15,7 +15,7 @@ const NavigationMenu = () => {
 
       <div onClick={e => alert('This Feature is currently under development, please try again later')}>Dashboards (1)</div>
 
-      <MyModal />
+      <ModalStats />
 
       <div>My Replays</div>
 
@@ -32,13 +32,13 @@ const NavigationMenu = () => {
       <div>RPL Account</div>
 
       <div>
+      {'See More    '}
         <select>
           <option value="--">--</option>
           <option value="-x-">-x-</option>
           <option value="-y-">-y-</option>
           <option value="-z-">-z-</option>
         </select>
-        {'    See More'}
       </div>
 
     </div>

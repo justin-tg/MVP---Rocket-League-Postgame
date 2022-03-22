@@ -9,7 +9,6 @@ import Footer from './Footer.jsx';
 import Hardcoded from './Hardcoded.jsx';
 import Header from './Header.jsx';
 import LoginForm from './LoginForm.jsx';
-import MyModal from './Modal.jsx';
 import NavigationMenu from './NavigationMenu.jsx';
 import Overview from './Overview.jsx';
 import '../style.css';

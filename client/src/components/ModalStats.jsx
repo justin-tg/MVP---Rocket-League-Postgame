@@ -4,7 +4,7 @@ import { Modal, Button } from 'react-bootstrap';
 import CustomStats from './CustomStats.jsx';
 import '../style.css';
 
-const MyModal = () => {
+const ModalStats = () => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -24,6 +24,7 @@ const MyModal = () => {
         >
           <Modal.Header closeButton>
             <Modal.Title>Customize My Stats</Modal.Title>
+            {/* <p>select or deselect stats based on your interests</p> */}
           </Modal.Header>
           <Modal.Body>
             <CustomStats/>
@@ -36,4 +37,4 @@ const MyModal = () => {
     );
   }
 
-export default MyModal;
+export default ModalStats;
