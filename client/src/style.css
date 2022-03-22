@@ -196,3 +196,17 @@ i {
 i:hover {
   color:rgba(96, 152, 216, 0.582);
 }
+
+.modalButton {
+  margin: 15px 10px;
+  font-size: 19px;
+  border-radius: 50px;
+  border: 1px solid black;
+  padding: 6px 35px;
+  background-color: rgb(120, 166, 209);
+  color: black;
+}
+
+.modalButton:hover {
+  background-color: rgb(8, 154, 252);
+}

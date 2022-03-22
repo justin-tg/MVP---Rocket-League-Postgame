@@ -14,11 +14,11 @@ const CustomStats = () => {
   return (
     <div className="customStats">
 
-      <h4>Customize My Stats</h4>
+      {/* <h4>Customize My Stats</h4> */}
 
       <ul>
         {allStats.map((item, i) =>
-          <EachStatItem statName={item} key={i} setActive={false}/>
+          <EachStatItem statName={item} key={i} setActive={true}/>
         )}
       </ul>
 

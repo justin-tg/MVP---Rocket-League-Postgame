@@ -3,6 +3,7 @@ import React, { useState, useEffect, createContext, useContext } from "react";
 import { AppContext } from './App.jsx';
 import { OverviewContext } from './Overview.jsx';
 import '../style.css';
+import MyModal from './Modal.jsx';
 
 const NavigationMenu = () => {
   // const { updateReplayData, replayData } = useContext(AppContext);
@@ -14,7 +15,7 @@ const NavigationMenu = () => {
 
       <div onClick={e => alert('This Feature is currently under development, please try again later')}>Dashboards (1)</div>
 
-      <div>Customize Stats</div>
+      <MyModal />
 
       <div>My Replays</div>
 
