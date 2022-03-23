@@ -23,7 +23,7 @@ const Search = ( { eachPlayerObj } ) => {
         type="text"
         value={searchTerm}
         onChange={e => {setSearchTerm(e.target.value)}}
-        placeholder="insert replay id here..."
+        placeholder="analyze replay id here..."
       />
 
       <input

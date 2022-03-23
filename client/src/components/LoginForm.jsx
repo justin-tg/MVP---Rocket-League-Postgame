@@ -14,9 +14,11 @@ const LoginForm = () => {
 
       <form className="loginForm" onSubmit={(e) => {
         e.preventDefault();
-        alert('Login Successful Please Wait... loading...loading...loading...');
+        alert('Login Successful Please Wait... loading..');
         //invoke passed down POST function to login in to an existing user
         //loginToUserAccount(email, password);
+        setPassword('');
+        setEmail('');
       }}>
 
         <input
@@ -24,7 +26,7 @@ const LoginForm = () => {
           type="text"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="username/email..."
+          placeholder=" username/email..."
         />
 
         <input
@@ -32,7 +34,7 @@ const LoginForm = () => {
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="password..."
+          placeholder=" password..."
         />
 
         <input

@@ -14,44 +14,66 @@ const PlayerStats = ( { eachPlayerObj } ) => {
     <>
       {selectedPlayer === eachPlayerObj.name &&
         <>
-          <div onClick={e => alert('Feature Unavailable: currently under development')}>
-            <b>Shooting Percentage: </b>
-            <div className="shootingPercentage">{eachPlayerObj.stats.core.shooting_percentage}%</div>
-            <p>Graph: Red Zone: --25% | Average Zone: 25%-50% | Green Zone: 50%++</p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Shooting Percentage:</b>
+              <div>{eachPlayerObj.stats.core.shooting_percentage}%</div>
+            </div>
+            <p> Red Zone: --25%  |  Average: 25%-50%  |  Green Zone: 50%++</p>
+            <span>see more...</span>
           </div>
 
-          <div className="avgBoost">
-            <b>Average Boost Amount: </b>{eachPlayerObj.stats.boost.avg_amount} out of 100
-            <p>Graph: Red Zone: --35 | Average Zone: 35-50 | Green Zone: 50++ </p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Average Boost Amount: </b>
+              <div>{eachPlayerObj.stats.boost.avg_amount} / 100</div>
+            </div>
+            <p>Red Zone: --35  |  Average: 35-50  |  Green Zone: 50++ </p>
+            <span>see more...</span>
           </div>
 
-          <div className="smallPads">
-            <b>Small Pads Collected: </b>{eachPlayerObj.stats.boost.count_collected_small} pads
-            <p>Graph: Red Zone: --60 | Average Zone: 60-75 | Green Zone: 75++</p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Small Pads Collected: </b>
+              <div>{eachPlayerObj.stats.boost.count_collected_small} pads</div>
+            </div>
+            <p>Red Zone: --60  |  Average: 60-75  |  Green Zone: 75++</p>
+            <span>see more...</span>
           </div>
 
-          <div className="timeZeroBoost">
-            <b>Time with Zero Boost: </b>{eachPlayerObj.stats.boost.time_zero_boost} seconds
-            <p>Graph: Red Zone: 45++ sec | Average Zone: 45-35 sec | Green Zone: --35 sec</p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Time with Zero Boost: </b>
+              <div>{eachPlayerObj.stats.boost.time_zero_boost} seconds</div>
+            </div>
+            <p>Red Zone: 45++  |  Average: 45-35  |  Green Zone: --35</p>
+            <span>see more...</span>
           </div>
 
-          <div className="timeFullBoost">
-            <b>Time with Full Boost: </b>{eachPlayerObj.stats.boost.time_full_boost} seconds
-            <p>Graph: Red Zone: 50-- sec | Average Zone: 50-70 sec | Green Zone: 70++ sec</p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Time with Full Boost: </b>
+              <div>{eachPlayerObj.stats.boost.time_full_boost} seconds</div>
+            </div>
+            <p>Red Zone: 50-- sec  |  Average: 50-70 sec  |  Green Zone: 70++ sec</p>
+            <span>see more...</span>
           </div>
 
-          <div className="avgSpeed">
-            <b>Average Speed: </b>{eachPlayerObj.stats.movement.avg_speed}u/s
-            <p>Graph: Red Zone: 1550-- | Average Zone: 1550-1675 | Green Zone: 1675++ </p>
-            <div className="seeMore"><i>see more...</i></div>
+          <div>
+            <div>
+              <b>Average Speed: </b>
+              <div>{eachPlayerObj.stats.movement.avg_speed}u/s</div>
+            </div>
+            <p>Red Zone: 1550--  |  Average: 1550-1675  |  Green Zone: 1675++ </p>
+            <span>see more...</span>
           </div>
 
-          <div>...</div>
+          <div>
+            <b>Statistics coming out soon:</b>
+            <p>
+              saves | assists | score | demos_for | time_supersonic_speed | air_time | ...
+            </p>
+          </div>
         </>
       }
     </>
