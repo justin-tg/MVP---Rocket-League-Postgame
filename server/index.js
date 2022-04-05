@@ -18,7 +18,7 @@ app.use(express.urlencoded( { extended: true }));
 
 app.post(endpoint, (req, res) => {
   const { id } = req.body;
-  console.log('req body: ', id.id);
+  // console.log('req body: ', id);
   //given id from client submit a get with appropriate headers, and replay id to ballchasing api
   const route = ballchasing + id;
   axios.get(route, {
@@ -27,7 +27,7 @@ app.post(endpoint, (req, res) => {
     }
   })
   .then((response) => {
-    console.log('successfully retrieved replay data: ', response.data)
+    // console.log('successfully retrieved replay data: ', response.data)
     //save the replay data to a db if time
     res.status(201).send(response.data);
   })

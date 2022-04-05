@@ -8,16 +8,12 @@ const PlayerDropDown = () => {
   const { allPlayers, updateSelectedPlayer, selectedPlayer } = useContext(OverviewContext);
   const [playersNamesArr, setPlayerNamesArr] = useState(null);
 
-  // const editedMovies = this.state.originalMovies.filter(eachMovie => eachMovie.title !== movie);
-  // console.log(allPlayers);
-
   let playersArray = [];
   allPlayers.forEach((eachPlayer) => {
     playersArray.push(eachPlayer.name);
   });
 
   // console.log(playersArray);
-
   return (
     <select onChange={e => {
       updateSelectedPlayer(e);
