@@ -15,6 +15,8 @@ import '../style.css';
 //Declared Variabls
 const API = '/replays';
 
+let hi;
+
 const App = () => {
   const [replayData, setReplayData] = useState(Hardcoded);
 
